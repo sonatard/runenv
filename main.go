@@ -37,8 +37,9 @@ func main() {
 	}
 
 	if export {
+		fmt.Printf("export ")
 		for _, env := range envs {
-			fmt.Printf("export %v=\"%v\"\n", env.Name, env.Value)
+			fmt.Printf("%v=\"%v\" ", env.Name, env.Value)
 		}
 	} else {
 		for i, env := range envs {

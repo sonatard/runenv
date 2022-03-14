@@ -29,8 +29,7 @@ $ runenv env.yaml
 KEY1=value1,KEY2=value2
 
 $ runenv -e env.yaml
-export KEY1="value1"
-export KEY2="value2"
+export KEY1="value1" KEY2="value2"
 ```
 
 ## Example
