@@ -7,6 +7,15 @@
 I want to manage Cloud Run environment variables in a yaml file. But there is no way to pass the file to [gcloud run deploy](https://cloud.google.com/sdk/gcloud/reference/run/deploy).
 Also, in [gcloud services replace](https://cloud.google.com/run/docs/configuring/environment-variables), it can manage environment variables in a yaml file, but it has to manage other values as well. In particular, we need to specify the revision, which is difficult to use.
 
+- Mar 14, 2022 Update
+
+`gcloud beta deploy` supports `--env-vars-file`. https://cloud.google.com/sdk/gcloud/reference/run/deploy
+
+```yaml
+KEY1: value1
+KEY2: value2
+```
+
 
 ## Install
 
